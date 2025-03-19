@@ -1,0 +1,14 @@
+﻿@attribute [Route("/vanilla/consulta")]
+
+<PageTitle>Consulta</PageTitle>
+
+<div>
+    <label>Catalogo:</label>
+    <input @bind-value="_catalogo" class="mb-2 border" />
+    <button class="border p-1">Procesar</button>
+</div>
+
+<div>
+    <label>Stock:</label>
+    <input @bind-value="_stock" disabled />
+</div>

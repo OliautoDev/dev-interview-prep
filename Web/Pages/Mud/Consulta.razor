@@ -1,0 +1,10 @@
+﻿@attribute [Route("/mud/consulta")]
+
+<PageTitle>Consulta</PageTitle>
+<MudContainer MaxWidth="MaxWidth.ExtraSmall">
+    <MudTextField Label="Catalogo" @bind-Value="_catalogo" Class="mb-2" 
+     Adornment="Adornment.End" AdornmentIcon="@Icons.Material.Filled.Search"
+     OnAdornmentClick="Procesar" />
+
+    <MudNumericField Label="Stock" @bind-Value="_stock" Disabled HideSpinButtons />
+</MudContainer>
